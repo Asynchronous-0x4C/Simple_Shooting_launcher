@@ -1,0 +1,2 @@
+# Simple_Shooting_launcher
+Simple_shootingのバージョン&amp;構成管理ツールです
