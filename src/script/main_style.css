@@ -1,0 +1,131 @@
+body{
+  margin:0px;
+}
+.main{
+  font-family: sans-serif;
+  color:black;
+}
+header {
+  width: 100%;
+  height:40px;
+  padding: 15px 0;
+  position:fixed;
+  margin: 0 auto;
+  text-align: left;
+  border-width:0px;
+  background-color: white;
+	z-index:1001;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
+}
+.headbox{
+  font-size:25px;
+  margin:0 auto;
+  position:fixed;
+  display: inline-flex;
+}
+.slim_header{
+  margin:0 auto;
+  font-weight:100;
+  margin-left:10px;
+}
+article{
+  display:flex;
+  position:relative;
+  top:70px;
+}
+.sidebar{
+  width:200px;
+  height:auto;
+  margin-top: 10px;
+}
+#tab_control{
+  list-style:none;
+}
+#tab_control li{
+  width:150px;
+  height:50px;
+  line-height: 50px;
+  margin-left:10px;
+  border-left-color: transparent;
+  border-left-width: 3px;
+  border-left-style: solid;
+}
+#tab_control li a{
+  color:gray;
+  text-decoration: none;
+  font-size:20px;
+  padding:10px 30px 10px 10px;
+}
+#main_text{
+  margin-left:10px;
+}
+.title_2{
+  font-weight:100;
+}
+#tab_body div{
+  position:relative;
+  z-index: 0;
+}
+.links{
+  list-style:none;
+}
+.links li {
+  background-color: white;
+  width: 200px;
+  text-align: center;
+  height: 30px;
+  line-height: 30px;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: rgb(0, 128, 255);
+  margin-top: 5px;
+}
+.links li a {
+  text-decoration: none;
+  padding:5px;
+  color:black;
+}
+.Release_List{
+  list-style:none;
+  background-color: white;
+  width: 250px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 10px;
+}
+.Release_List button{
+  font-size:15px;
+  background-color: white;
+  width: 250px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-color:transparent;
+  border-width:0px;
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: rgb(0, 128, 255);
+}
+.Release_List button:hover{
+  cursor:pointer;
+}
+.Release_List button:active{
+  background-color: #e0e0e0;
+}
+#update{
+  width:150px;
+  height:25px;
+  background-color: white;
+  border-radius: 0px;
+  border-color: transparent;
+  border-width:0px;
+  border-left-width: 2px;
+  border-left-color: rgb(0, 128, 255);
+}
+#update:hover{
+  cursor:pointer;
+}
+#update:active{
+  background-color: #e0e0e0;
+}

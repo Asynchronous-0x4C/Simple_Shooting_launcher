@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple_Shooting_Launcher</title>
+  <link rel="stylesheet" href="script/main_style.css"></link>
+</head>
+<body>
+  <div class="main">
+    <header id="headbox_bg">
+      <div class="headbox">
+        <p class="slim_header">Simple_Shooting_Launcher</p>
+      </div>
+    </header>
+    <article id="content">
+      <div class="sidebar">
+        <div id="tab_control">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#install">Install</a></li>
+          <li><a href="#versions">Versions</a></li>
+        </div>
+      </div>
+      <div id="main_text">
+        <div id="tab_body">
+          <div id="home">
+            <div class="links">
+              <h2 class="title_2">links</h2>
+              <li class="link_box"><a href="https://github.com/Asynchronous-0x4C/Simple_shooting_2" target="_blank">Simple_Shooting_2</a></li>
+              <li class="link_box"><a href="https://github.com/Asynchronous-0x4C/Simple_shooting_2.1" target="_blank">Simple_Shooting_2.1</a></li>
+            </div>
+          </div>
+          <div id="install">
+            <div id="release">
+              <h2 class="title_2">install</h2>
+              <button type="button" id="update" onclick="load_release()">update release</button>
+              <button type="button" id="update" onclick="update_launcher()">update launcher</button>
+            </div>
+          </div>
+          <div id="versions">
+            <div class="links">
+              <h2 class="title_2">version</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </articel>
+  </div>
+</body>
+<script src="script/main_process.js"></script>
+<script src="script/load_release.js"></script>
+<script src="script/update_launcher.js"></script>
+</html>
