@@ -1,3 +1,12 @@
+:root[theme="dark"]{
+  filter:invert(100%) hue-rotate(180deg);
+}
+button:hover{
+  cursor:pointer;
+}
+button:active{
+  background-color: #c8c8c8;
+}
 body{
   margin:0px;
 }
@@ -5,7 +14,7 @@ body{
   font-family: sans-serif;
   color:black;
 }
-header {
+header{
   width: 100%;
   height:40px;
   padding: 15px 0;
@@ -13,9 +22,11 @@ header {
   margin: 0 auto;
   text-align: left;
   border-width:0px;
-  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(125,125,125);
+  background-color: rgb(240,240,240);
 	z-index:1001;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.35);
 }
 .headbox{
   font-size:25px;
@@ -28,7 +39,7 @@ header {
   font-weight:100;
   margin-left:10px;
 }
-article{
+#content{
   display:flex;
   position:relative;
   top:70px;
@@ -70,7 +81,7 @@ article{
   list-style:none;
 }
 .links li {
-  background-color: white;
+  background-color: rgb(220,220,220);
   width: 200px;
   text-align: center;
   height: 30px;
@@ -85,18 +96,65 @@ article{
   padding:5px;
   color:black;
 }
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label.check {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+  color: #969696;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  background-color: #ffffff;
+}
+input[type="checkbox"]:checked + label.check {
+  border: 1px solid #4db4e4;
+  background-color: #4db4e4;
+}
+input[type="checkbox"] + label.check::before {
+  content: "Light";
+  position: absolute;
+  top: 4px;
+  left: auto;
+  right: 6px;
+}
+input[type="checkbox"]:checked + label.check::before {
+  content: "Dark";
+  position: absolute;
+  left: 6px;
+  right: auto;
+  color: #ffffff;
+}
+input[type="checkbox"] + label.check > div {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 12px;
+  height: 22px;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+input[type="checkbox"]:checked + label.check > div {
+  border: 1px solid transparent;
+  left: 44px;
+}
 .Release_List{
   list-style:none;
-  background-color: white;
+  background-color: rgb(220,220,220);
   width: 250px;
   text-align: center;
   height: 40px;
   line-height: 40px;
   margin-top: 10px;
 }
-.Release_List button{
+.Release_Name{
   font-size:15px;
-  background-color: white;
+  background-color: rgb(220,220,220);
   width: 250px;
   text-align: center;
   height: 40px;
@@ -107,25 +165,49 @@ article{
   border-left-style: solid;
   border-left-color: rgb(0, 128, 255);
 }
-.Release_List button:hover{
-  cursor:pointer;
+.List_article{
+  display:flex;
 }
-.Release_List button:active{
-  background-color: #e0e0e0;
+.Install{
+  margin-left:15px;
+  position:relative;
+  color:rgb(0, 190, 0);
+  border-color:rgb(0,190,0);
+  box-shadow: none;
+  top:10px;
+  width:100px;
+  height:25px;
+  border-radius:12.5px;
+}
+.unInstall{
+  margin-left:15px;
+  position:relative;
+  color:rgb(190, 0, 0);
+  border-color:rgb(190,0,0);
+  box-shadow: none;
+  top:10px;
+  width:100px;
+  height:25px;
+  border-radius:12.5px;
+}
+.reInstall{
+  margin-left:15px;
+  position:relative;
+  color:rgb(0, 0, 190);
+  border-color:rgb(0,0,190);
+  box-shadow: none;
+  top:10px;
+  width:100px;
+  height:25px;
+  border-radius:12.5px;
 }
 #update{
   width:150px;
   height:25px;
-  background-color: white;
+  background-color: rgb(220,220,220);
   border-radius: 0px;
   border-color: transparent;
   border-width:0px;
   border-left-width: 2px;
   border-left-color: rgb(0, 128, 255);
-}
-#update:hover{
-  cursor:pointer;
-}
-#update:active{
-  background-color: #e0e0e0;
 }

@@ -1,0 +1,1 @@
+.\node_modules\electron\dist\electron.exe .\src\main.js
